@@ -1,0 +1,133 @@
+﻿Launch CMD with Administrator 
+
+
+cd C:\Program Files (x86)\Intel\openvino_2021.2.185\deployment_tools\model_optimizer
+
+python mo.py --input_model C:\Users\openvn\Desktop\model\shanghaia.caffemodel
+
+
+cd C:\Program Files (x86)\Intel\openvino_2021\deployment_tools\model_optimizer\install_prerequisites
+cd C:\Program Files (x86)\Intel\openvino_2021\deployment_tools\demo
+demo_squeezenet_download_convert_run.sh 
+
+
+### Message 1 - resolved by cmd launched with Administrator
+
+Microsoft Windows [Version 10.0.17763.1935]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>python mo.py --input_model C:\Users\openvn\Desktop\model\shanghaia.caffemodel
+python: can't open file 'mo.py': [Errno 2] No such file or directory
+
+C:\Windows\system32>cd C:\Program Files (x86)\Intel\openvino_2021.2.185\deployment_tools\model_optimizer
+
+C:\Program Files (x86)\Intel\openvino_2021.2.185\deployment_tools\model_optimizer>python mo.py --input_model C:\Users\openvn\Desktop\model\shanghaia.caffemodel
+Model Optimizer arguments:
+Common parameters:
+        - Path to the Input Model:      C:\Users\openvn\Desktop\model\shanghaia.caffemodel
+        - Path for generated IR:        C:\Program Files (x86)\Intel\openvino_2021.2.185\deployment_tools\model_optimizer\.
+        - IR output name:       shanghaia
+        - Log level:    ERROR
+        - Batch:        Not specified, inherited from the model
+        - Input layers:         Not specified, inherited from the model
+        - Output layers:        Not specified, inherited from the model
+        - Input shapes:         Not specified, inherited from the model
+        - Mean values:  Not specified
+        - Scale values:         Not specified
+        - Scale factor:         Not specified
+        - Precision of IR:      FP32
+        - Enable fusing:        True
+        - Enable grouped convolutions fusing:   True
+        - Move mean values to preprocess section:       None
+        - Reverse input channels:       False
+Caffe specific parameters:
+        - Path to Python Caffe* parser generated from caffe.proto:      mo\front\caffe\proto
+        - Enable resnet optimization:   True
+        - Path to the Input prototxt:   C:\Users\openvn\Desktop\model\shanghaia.prototxt
+        - Path to CustomLayersMapping.xml:      extensions\front\caffe\CustomLayersMapping.xml
+        - Path to a mean file:  Not specified
+        - Offsets for a mean file:      Not specified
+Model Optimizer version:        2021.2.0-1877-176bdf51370-releases/2021/2
+Please expect that Model Optimizer conversion might be slow. You are currently using Python protobuf library implementation.
+However you can use the C++ protobuf implementation that is supplied with the OpenVINO toolkitor build protobuf library from sources.
+Navigate to "install_prerequisites" folder and run: python -m easy_install protobuf-3.5.1-py($your_python_version)-win-amd64.egg
+set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=cpp
+
+
+ For more information please refer to Model Optimizer FAQ, question #80. (https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_prepare_model_Model_Optimizer_FAQ.html?question=80#question-80)
+
+[ SUCCESS ] Generated IR version 10 model.
+[ SUCCESS ] XML file: C:\Program Files (x86)\Intel\openvino_2021.2.185\deployment_tools\model_optimizer\.\shanghaia.xml
+[ SUCCESS ] BIN file: C:\Program Files (x86)\Intel\openvino_2021.2.185\deployment_tools\model_optimizer\.\shanghaia.bin
+[ SUCCESS ] Total execution time: 64.19 seconds.
+It's been a while, check for a new version of Intel(R) Distribution of OpenVINO(TM) toolkit here https://software.intel.com/content/www/us/en/develop/tools/openvino-toolkit/choose-download.html?cid=other&source=Prod&campid=ww_2021_bu_IOTG&content=upg_pro&medium=organic_uid_agjj or on the GitHub*
+
+C:\Program Files (x86)\Intel\openvino_2021.2.185\deployment_tools\model_optimizer>python mo.py --input_model C:\Users\openvn\Desktop\model\shanghaib.caffemodel
+Model Optimizer arguments:
+Common parameters:
+        - Path to the Input Model:      C:\Users\openvn\Desktop\model\shanghaib.caffemodel
+        - Path for generated IR:        C:\Program Files (x86)\Intel\openvino_2021.2.185\deployment_tools\model_optimizer\.
+        - IR output name:       shanghaib
+        - Log level:    ERROR
+        - Batch:        Not specified, inherited from the model
+        - Input layers:         Not specified, inherited from the model
+        - Output layers:        Not specified, inherited from the model
+        - Input shapes:         Not specified, inherited from the model
+        - Mean values:  Not specified
+        - Scale values:         Not specified
+        - Scale factor:         Not specified
+        - Precision of IR:      FP32
+        - Enable fusing:        True
+        - Enable grouped convolutions fusing:   True
+        - Move mean values to preprocess section:       None
+        - Reverse input channels:       False
+Caffe specific parameters:
+        - Path to Python Caffe* parser generated from caffe.proto:      mo\front\caffe\proto
+        - Enable resnet optimization:   True
+        - Path to the Input prototxt:   C:\Users\openvn\Desktop\model\shanghaib.prototxt
+        - Path to CustomLayersMapping.xml:      extensions\front\caffe\CustomLayersMapping.xml
+        - Path to a mean file:  Not specified
+        - Offsets for a mean file:      Not specified
+Model Optimizer version:        2021.2.0-1877-176bdf51370-releases/2021/2
+Please expect that Model Optimizer conversion might be slow. You are currently using Python protobuf library implementation.
+However you can use the C++ protobuf implementation that is supplied with the OpenVINO toolkitor build protobuf library from sources.
+Navigate to "install_prerequisites" folder and run: python -m easy_install protobuf-3.5.1-py($your_python_version)-win-amd64.egg
+set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=cpp
+
+
+ For more information please refer to Model Optimizer FAQ, question #80. (https://docs.openvinotoolkit.org/latest/openvino_docs_MO_DG_prepare_model_Model_Optimizer_FAQ.html?question=80#question-80)
+
+[ SUCCESS ] Generated IR version 10 model.
+[ SUCCESS ] XML file: C:\Program Files (x86)\Intel\openvino_2021.2.185\deployment_tools\model_optimizer\.\shanghaib.xml
+[ SUCCESS ] BIN file: C:\Program Files (x86)\Intel\openvino_2021.2.185\deployment_tools\model_optimizer\.\shanghaib.bin
+[ SUCCESS ] Total execution time: 64.53 seconds.
+It's been a while, check for a new version of Intel(R) Distribution of OpenVINO(TM) toolkit here https://software.intel.com/content/www/us/en/develop/tools/openvino-toolkit/choose-download.html?cid=other&source=Prod&campid=ww_2021_bu_IOTG&content=upg_pro&medium=organic_uid_agjj or on the GitHub*
+
+C:\Program Files (x86)\Intel\openvino_2021.2.185\deployment_tools\model_optimizer>
+
+### Message 2 (error) - resolved by degrade to 2021.2
+
+[ WARNING ] Failed to import Inference Engine Python API in: PYTHONPATH
+[ WARNING ] [WinError 2] The system cannot find the file specified: 'C:\\Program Files (x86)\\Intel\\openvino_2021.3.394\\python\\python3.8\\openvino\\libs'
+[ WARNING ] Failed to import Inference Engine Python API in: C:\Program Files (x86)\Intel\openvino_2021.3.394\python\python3.8
+[ WARNING ] [WinError 2] The system cannot find the file specified: 'C:\\Program Files (x86)\\Intel\\openvino_2021.3.394\\python\\python3.8\\openvino\\libs'
+[ WARNING ] Failed to import Inference Engine Python API in: C:\Program Files (x86)\Intel\openvino_2021.3.394\python\python3.8
+[ WARNING ] [WinError 2] The system cannot find the file specified: 'C:\\Program Files (x86)\\Intel\\openvino_2021.3.394\\python\\python3.8\\openvino\\libs'
+Name: openvino
+Version: 2021.3.0
+Summary: Inference Engine Python* API
+Home-page: https://docs.openvinotoolkit.org/latest/index.html
+Author: Intel Corporation
+Author-email: openvino_pushbot@intel.com
+License: Proprietary - Intel
+Location: c:\users\openvn\appdata\local\programs\python\python38\lib\site-packages
+Requires: numpy
+Required-by:
+[ WARNING ] OpenVINO (TM) Toolkit version installed in pip is incompatible with the Model Optimizer
+[ WARNING ] For the release Model Optimizer version which is 2021.3 please install OpenVINO (TM) toolkit using pip install openvino==2021.3 or build Inference Engine Python API from sources
+*****************************************************************************************
+Optional: To speed up model conversion process, install protobuf-*.egg located in the
+"model-optimizer\install_prerequisites" folder or building protobuf library from sources.
+For more information please refer to Model Optimizer FAQ, question #80.
+
+C:\Program Files (x86)\Intel\openvino_2021\deployment_tools\model_optimizer\install_prerequisites>

@@ -1,0 +1,151 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="relu2_1" out_port_id="conv2_1"/>
+		<IR name="relu2_1" out_port_id="1" id="16"/>
+	</map>
+	<map>
+		<framework name="conv4_1" out_port_id="conv4_1"/>
+		<IR name="conv4_1" out_port_id="2" id="42"/>
+	</map>
+	<map>
+		<framework name="relu1_1" out_port_id="conv1_1"/>
+		<IR name="relu1_1" out_port_id="1" id="5"/>
+	</map>
+	<map>
+		<framework name="relu6_1" out_port_id="conv6_1"/>
+		<IR name="relu6_1" out_port_id="1" id="58"/>
+	</map>
+	<map>
+		<framework name="relu4_1" out_port_id="conv4_1"/>
+		<IR name="relu4_1" out_port_id="1" id="43"/>
+	</map>
+	<map>
+		<framework name="conv1_2" out_port_id="conv1_2"/>
+		<IR name="conv1_2" out_port_id="2" id="9"/>
+	</map>
+	<map>
+		<framework name="conv7_3" out_port_id="conv7_3"/>
+		<IR name="conv7_3" out_port_id="2" id="82"/>
+	</map>
+	<map>
+		<framework name="relu6_2" out_port_id="conv6_2"/>
+		<IR name="relu6_2" out_port_id="1" id="63"/>
+	</map>
+	<map>
+		<framework name="relu1_2" out_port_id="conv1_2"/>
+		<IR name="relu1_2" out_port_id="1" id="10"/>
+	</map>
+	<map>
+		<framework name="relu7_2" out_port_id="conv7_2"/>
+		<IR name="relu7_2" out_port_id="1" id="78"/>
+	</map>
+	<map>
+		<framework name="relu4_3" out_port_id="conv4_3"/>
+		<IR name="relu4_3" out_port_id="1" id="53"/>
+	</map>
+	<map>
+		<framework name="pool3" out_port_id="pool3"/>
+		<IR name="pool3" out_port_id="1" id="38"/>
+	</map>
+	<map>
+		<framework name="relu3_1" out_port_id="conv3_1"/>
+		<IR name="relu3_1" out_port_id="1" id="27"/>
+	</map>
+	<map>
+		<framework name="conv1_1" out_port_id="conv1_1"/>
+		<IR name="conv1_1" out_port_id="2" id="4"/>
+	</map>
+	<map>
+		<framework name="conv2_2" out_port_id="conv2_2"/>
+		<IR name="conv2_2" out_port_id="2" id="20"/>
+	</map>
+	<map>
+		<framework name="conv6_2" out_port_id="conv6_2"/>
+		<IR name="conv6_2" out_port_id="2" id="62"/>
+	</map>
+	<map>
+		<framework name="conv7_2" out_port_id="conv7_2"/>
+		<IR name="conv7_2" out_port_id="2" id="77"/>
+	</map>
+	<map>
+		<framework name="conv7_1" out_port_id="conv7_1"/>
+		<IR name="conv7_1" out_port_id="2" id="72"/>
+	</map>
+	<map>
+		<framework name="relu3_2" out_port_id="conv3_2"/>
+		<IR name="relu3_2" out_port_id="1" id="32"/>
+	</map>
+	<map>
+		<framework name="pool1" out_port_id="pool1"/>
+		<IR name="pool1" out_port_id="1" id="11"/>
+	</map>
+	<map>
+		<framework name="relu7_1" out_port_id="conv7_1"/>
+		<IR name="relu7_1" out_port_id="1" id="73"/>
+	</map>
+	<map>
+		<framework name="conv3_1" out_port_id="conv3_1"/>
+		<IR name="conv3_1" out_port_id="2" id="26"/>
+	</map>
+	<map>
+		<framework name="relu7_3" out_port_id="conv7_3"/>
+		<IR name="relu7_3" out_port_id="1" id="83"/>
+	</map>
+	<map>
+		<framework name="relu2_2" out_port_id="conv2_2"/>
+		<IR name="relu2_2" out_port_id="1" id="21"/>
+	</map>
+	<map>
+		<framework name="conv4_2" out_port_id="conv4_2"/>
+		<IR name="conv4_2" out_port_id="2" id="47"/>
+	</map>
+	<map>
+		<framework name="conv3_2" out_port_id="conv3_2"/>
+		<IR name="conv3_2" out_port_id="2" id="31"/>
+	</map>
+	<map>
+		<framework name="fu1" out_port_id="0"/>
+		<IR name="fu1" out_port_id="2" id="87"/>
+	</map>
+	<map>
+		<framework name="relu3_3" out_port_id="conv3_3"/>
+		<IR name="relu3_3" out_port_id="1" id="37"/>
+	</map>
+	<map>
+		<framework name="conv6_1" out_port_id="conv6_1"/>
+		<IR name="conv6_1" out_port_id="2" id="57"/>
+	</map>
+	<map>
+		<framework name="relu4_2" out_port_id="conv4_2"/>
+		<IR name="relu4_2" out_port_id="1" id="48"/>
+	</map>
+	<map>
+		<framework name="data" out_port_id="data"/>
+		<IR name="data" out_port_id="0" id="0"/>
+	</map>
+	<map>
+		<framework name="conv2_1" out_port_id="conv2_1"/>
+		<IR name="conv2_1" out_port_id="2" id="15"/>
+	</map>
+	<map>
+		<framework name="relu6_3" out_port_id="conv6_3"/>
+		<IR name="relu6_3" out_port_id="1" id="68"/>
+	</map>
+	<map>
+		<framework name="conv4_3" out_port_id="conv4_3"/>
+		<IR name="conv4_3" out_port_id="2" id="52"/>
+	</map>
+	<map>
+		<framework name="conv6_3" out_port_id="conv6_3"/>
+		<IR name="conv6_3" out_port_id="2" id="67"/>
+	</map>
+	<map>
+		<framework name="pool2" out_port_id="pool2"/>
+		<IR name="pool2" out_port_id="1" id="22"/>
+	</map>
+	<map>
+		<framework name="conv3_3" out_port_id="conv3_3"/>
+		<IR name="conv3_3" out_port_id="2" id="36"/>
+	</map>
+</mapping>
