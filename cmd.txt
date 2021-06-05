@@ -131,3 +131,68 @@ Optional: To speed up model conversion process, install protobuf-*.egg located i
 For more information please refer to Model Optimizer FAQ, question #80.
 
 C:\Program Files (x86)\Intel\openvino_2021\deployment_tools\model_optimizer\install_prerequisites>
+
+
+## Message 3 convert success
+
+C:\WINDOWS\system32>cd C:\Program Files (x86)\Intel\openvino_2021\deployment_tools\model_optimizer
+
+C:\Program Files (x86)\Intel\openvino_2021\deployment_tools\model_optimizer>python mo.py --input_model "C:\Users\Kim&Suzuki\Desktop\open-vn-person-count\model_a.onnx"
+Model Optimizer arguments:
+Common parameters:
+        - Path to the Input Model:      C:\Users\Kim&Suzuki\Desktop\open-vn-person-count\model_a.onnx
+        - Path for generated IR:        C:\Program Files (x86)\Intel\openvino_2021\deployment_tools\model_optimizer\.
+        - IR output name:       model_a
+        - Log level:    ERROR
+        - Batch:        Not specified, inherited from the model
+        - Input layers:         Not specified, inherited from the model
+        - Output layers:        Not specified, inherited from the model
+        - Input shapes:         Not specified, inherited from the model
+        - Mean values:  Not specified
+        - Scale values:         Not specified
+        - Scale factor:         Not specified
+        - Precision of IR:      FP32
+        - Enable fusing:        True
+        - Enable grouped convolutions fusing:   True
+        - Move mean values to preprocess section:       None
+        - Reverse input channels:       False
+ONNX specific parameters:
+        - Inference Engine found in:    C:\Users\Kim&Suzuki\AppData\Local\Programs\Python\Python37\lib\site-packages\openvino
+Inference Engine version:       2.1.2021.3.0-2774-d6ebaa2cd8e-refs/pull/4731/head
+Model Optimizer version:            2021.3.0-2787-60059f2c755-releases/2021/3
+[ WARNING ] Model Optimizer and Inference Engine versions do no match.
+[ WARNING ] Consider building the Inference Engine Python API from sources or reinstall OpenVINO (TM) toolkit using "pip install openvino==2021.3"
+[ SUCCESS ] Generated IR version 10 model.
+[ SUCCESS ] XML file: C:\Program Files (x86)\Intel\openvino_2021\deployment_tools\model_optimizer\model_a.xml
+[ SUCCESS ] BIN file: C:\Program Files (x86)\Intel\openvino_2021\deployment_tools\model_optimizer\model_a.bin
+[ SUCCESS ] Total execution time: 11.18 seconds.
+
+C:\Program Files (x86)\Intel\openvino_2021\deployment_tools\model_optimizer>python mo.py --input_model "C:\Users\Kim&Suzuki\Desktop\open-vn-person-count\model_b.onnx"
+Model Optimizer arguments:
+Common parameters:
+        - Path to the Input Model:      C:\Users\Kim&Suzuki\Desktop\open-vn-person-count\model_b.onnx
+        - Path for generated IR:        C:\Program Files (x86)\Intel\openvino_2021\deployment_tools\model_optimizer\.
+        - IR output name:       model_b
+        - Log level:    ERROR
+        - Batch:        Not specified, inherited from the model
+        - Input layers:         Not specified, inherited from the model
+        - Output layers:        Not specified, inherited from the model
+        - Input shapes:         Not specified, inherited from the model
+        - Mean values:  Not specified
+        - Scale values:         Not specified
+        - Scale factor:         Not specified
+        - Precision of IR:      FP32
+        - Enable fusing:        True
+        - Enable grouped convolutions fusing:   True
+        - Move mean values to preprocess section:       None
+        - Reverse input channels:       False
+ONNX specific parameters:
+        - Inference Engine found in:    C:\Users\Kim&Suzuki\AppData\Local\Programs\Python\Python37\lib\site-packages\openvino
+Inference Engine version:       2.1.2021.3.0-2774-d6ebaa2cd8e-refs/pull/4731/head
+Model Optimizer version:            2021.3.0-2787-60059f2c755-releases/2021/3
+[ WARNING ] Model Optimizer and Inference Engine versions do no match.
+[ WARNING ] Consider building the Inference Engine Python API from sources or reinstall OpenVINO (TM) toolkit using "pip install openvino==2021.3"
+[ SUCCESS ] Generated IR version 10 model.
+[ SUCCESS ] XML file: C:\Program Files (x86)\Intel\openvino_2021\deployment_tools\model_optimizer\model_b.xml
+[ SUCCESS ] BIN file: C:\Program Files (x86)\Intel\openvino_2021\deployment_tools\model_optimizer\model_b.bin
+[ SUCCESS ] Total execution time: 9.18 seconds.

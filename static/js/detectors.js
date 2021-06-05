@@ -1,7 +1,5 @@
 $(function () {
-
     const detection_cmd = ['async', 'sync', 'person-det', 'person-reid'];
-
     $.ajaxSetup({ cache: false });
 
     // flip frame
@@ -12,7 +10,6 @@ $(function () {
 
     // post detection action
     $('.btn').on('click', function (e) {
-
         var command = JSON.stringify({ "command": $('#' + $(this).attr('id')).val() });
 
         if (JSON.parse(command).command == "") {
@@ -20,11 +17,9 @@ $(function () {
         }
 
         //console.log("btn", command)
-
         if (detection_cmd.includes(JSON.parse(command).command)) {
             post('/detection', command);
         }
-
     });
 
     // ajax post
@@ -71,8 +66,6 @@ $(function () {
             } else if (!is_reid) {
                 $("#person-reid").attr('class', 'btn btn-secondary');
             }
-
-
         }).fail(function (jqXHR, textStatus, errorThrown) {
             $("#res").text(textStatus + ":" + jqXHR.status + " " + errorThrown);
         });

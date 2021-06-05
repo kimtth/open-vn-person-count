@@ -2,13 +2,10 @@
 https://github.com/ECI-Robotics/opencv_remote_streaming_processing/
 """
 
-import cv2
-import numpy as np
-import math
 import os
-import sys
-from logging import getLogger, basicConfig, DEBUG, INFO, ERROR
-from timeit import default_timer as timer
+from logging import getLogger, basicConfig, INFO
+
+import cv2
 
 logger = getLogger(__name__)
 

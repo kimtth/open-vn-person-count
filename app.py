@@ -12,7 +12,7 @@ from libs.argparser import build_argparser
 from libs.camera import VideoCamera
 from libs.interactive_detection import Detections
 
-app = Flask(__name__, static_folder="./static", template_folder="./static")
+app = Flask(__name__, static_folder="./static", template_folder="./templates")
 CORS(app) #Cross Origin Resource Sharing
 logger = getLogger(__name__)
 
@@ -111,7 +111,6 @@ def flip_frame():
 
 
 if __name__ == "__main__":
-
     # arg parse
     args = build_argparser().parse_args()
     devices = [args.device, args.device_reidentification]
@@ -126,3 +125,5 @@ if __name__ == "__main__":
     detections = Detections(camera.frame, devices, args.axis, args.grid)
 
     app.run(host="0.0.0.0", threaded=True)
+    # app -i cam
+    # app -i people-waling.mp4 --grid 10

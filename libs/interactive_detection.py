@@ -1,13 +1,12 @@
-from logging import getLogger, basicConfig, DEBUG, INFO
-import os
-import sys
-import cv2
-import numpy as np
+import configparser
+from logging import getLogger, basicConfig, INFO
 from timeit import default_timer as timer
+
+import cv2
+
+import libs.detectors as detectors
 from libs.tracker import Tracker
 from libs.utils import get_person_frames
-import libs.detectors as detectors
-import configparser
 
 logger = getLogger(__name__)
 basicConfig(

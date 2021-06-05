@@ -1,0 +1,219 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="Relu_13" out_port_id="0"/>
+		<IR id="32" name="Relu_13" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="frontend.7.weight" out_port_id="0"/>
+		<IR id="17" name="frontend.7.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="output_layer.weight" out_port_id="0"/>
+		<IR id="84" name="output_layer.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="MaxPool_4" out_port_id="0"/>
+		<IR id="11" name="MaxPool_4" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Conv_17" out_port_id="0"/>
+		<IR id="42" name="Conv_17" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_8" out_port_id="0"/>
+		<IR id="21" name="Relu_8" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="frontend.17.weight" out_port_id="0"/>
+		<IR id="39" name="frontend.17.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="backend.2.weight" out_port_id="0"/>
+		<IR id="59" name="backend.2.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="Conv_21" out_port_id="0"/>
+		<IR id="52" name="Conv_21" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="frontend.5.weight" out_port_id="0"/>
+		<IR id="12" name="frontend.5.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="frontend.10.weight" out_port_id="0"/>
+		<IR id="23" name="frontend.10.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="Relu_32" out_port_id="0"/>
+		<IR id="78" name="Relu_32" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Conv_23" out_port_id="0"/>
+		<IR id="57" name="Conv_23" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="backend.6.weight" out_port_id="0"/>
+		<IR id="69" name="backend.6.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="Relu_26" out_port_id="0"/>
+		<IR id="63" name="Relu_26" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Relu_6" out_port_id="0"/>
+		<IR id="16" name="Relu_6" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Relu_22" out_port_id="0"/>
+		<IR id="53" name="Relu_22" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Relu_18" out_port_id="0"/>
+		<IR id="43" name="Relu_18" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="frontend.0.weight" out_port_id="0"/>
+		<IR id="1" name="frontend.0.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="Relu_34" out_port_id="0"/>
+		<IR id="83" name="Relu_34" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Conv_27" out_port_id="0"/>
+		<IR id="67" name="Conv_27" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="backend.10.weight" out_port_id="0"/>
+		<IR id="79" name="backend.10.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="input.1" out_port_id="0"/>
+		<IR id="0" name="input.1" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="Conv_2" out_port_id="0"/>
+		<IR id="9" name="Conv_2" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Conv_14" out_port_id="0"/>
+		<IR id="36" name="Conv_14" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Conv_19" out_port_id="0"/>
+		<IR id="47" name="Conv_19" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_24" out_port_id="0"/>
+		<IR id="58" name="Relu_24" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="backend.4.weight" out_port_id="0"/>
+		<IR id="64" name="backend.4.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="MaxPool_9" out_port_id="0"/>
+		<IR id="22" name="MaxPool_9" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Conv_33" out_port_id="0"/>
+		<IR id="82" name="Conv_33" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="MaxPool_16" out_port_id="0"/>
+		<IR id="38" name="MaxPool_16" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Conv_7" out_port_id="0"/>
+		<IR id="20" name="Conv_7" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="frontend.12.weight" out_port_id="0"/>
+		<IR id="28" name="frontend.12.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="backend.0.weight" out_port_id="0"/>
+		<IR id="54" name="backend.0.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="Relu_3" out_port_id="0"/>
+		<IR id="10" name="Relu_3" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Conv_35" out_port_id="0"/>
+		<IR id="87" name="70" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Conv_25" out_port_id="0"/>
+		<IR id="62" name="Conv_25" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Conv_5" out_port_id="0"/>
+		<IR id="15" name="Conv_5" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="frontend.19.weight" out_port_id="0"/>
+		<IR id="44" name="frontend.19.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="Conv_31" out_port_id="0"/>
+		<IR id="77" name="Conv_31" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_15" out_port_id="0"/>
+		<IR id="37" name="Relu_15" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Relu_28" out_port_id="0"/>
+		<IR id="68" name="Relu_28" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Conv_29" out_port_id="0"/>
+		<IR id="72" name="Conv_29" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="frontend.14.weight" out_port_id="0"/>
+		<IR id="33" name="frontend.14.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="Relu_30" out_port_id="0"/>
+		<IR id="73" name="Relu_30" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Conv_12" out_port_id="0"/>
+		<IR id="31" name="Conv_12" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="backend.8.weight" out_port_id="0"/>
+		<IR id="74" name="backend.8.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="Conv_0" out_port_id="0"/>
+		<IR id="4" name="Conv_0" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="Relu_1" out_port_id="0"/>
+		<IR id="5" name="Relu_1" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Conv_10" out_port_id="0"/>
+		<IR id="26" name="Conv_10" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="frontend.21.weight" out_port_id="0"/>
+		<IR id="49" name="frontend.21.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="frontend.2.weight" out_port_id="0"/>
+		<IR id="6" name="frontend.2.weight/Output_0/Data__const" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="Relu_11" out_port_id="0"/>
+		<IR id="27" name="Relu_11" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="Relu_20" out_port_id="0"/>
+		<IR id="48" name="Relu_20" out_port_id="1"/>
+	</map>
+</mapping>
