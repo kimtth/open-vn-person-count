@@ -1,3 +1,5 @@
+import os.path
+
 import cv2
 import numpy as np
 # Import OpenVINO Inference Engine
@@ -50,9 +52,10 @@ def run_nn(model_xml_path, file_path):
 
 
 if __name__ == '__main__':
-    file_path = 'C:\\Users\\Kim&Suzuki\\Desktop\\open-vn-person-count\\csr_rtn\\images_a\\IMG_100.jpg'
+    file_path = './csr_rtn/images_a/IMG_100.jpg'
+    file_path = os.path.abspath(file_path)
 
-    model_xml_path = '.\\model\\csrnet-crowd-counting-caffe\\shanghaia.xml'
+    model_xml_path = './model/csrnet-crowd-counting-caffe/shanghaia.xml'
     run_nn(model_xml_path, file_path)
     # Not sure why it makes diffrent result with same model,
     # this model is converted through processes from pytorch to onnx then openvino.
