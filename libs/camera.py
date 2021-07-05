@@ -60,6 +60,9 @@ class VideoCamera:
     def get_frame(self, flip_code):
 
         ret, frame = self.cap.read()
+        if not hasattr(frame, 'shape'):
+            return
+
         if frame.shape[0] > self.resize_width:
             scale = self.resize_width / frame.shape[1]
             frame = cv2.resize(frame, dsize=None, fx=scale, fy=scale)

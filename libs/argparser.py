@@ -7,7 +7,8 @@ def build_argparser():
         "-i",
         "--input",
         help="Path to video file or image. 'cam' for capturing video stream from camera",
-        required=True,
+        default="people-walking.mp4",
+        #required=True,
         type=str,
     )
     parser.add_argument(
@@ -42,7 +43,7 @@ def build_argparser():
         "-g",
         "--grid",
         help="Specify how many grid to divide frame. This is used to define boundary area when the tracker counts person. 0 ~ 2 means not counting person. (range: 3 < max_grid)",
-        default=0,
+        default=10,
         type=int,
     )
 

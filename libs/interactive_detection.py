@@ -199,7 +199,8 @@ class Detections(Detectors):
             return self.prev_frame
 
         if is_async:
-            prev_frame = frame.copy()
+            if hasattr(frame, 'copy'):
+                prev_frame = frame.copy()
         else:
             self.prev_frame = frame.copy()
 
